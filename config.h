@@ -10,7 +10,7 @@ static const unsigned int gappov    = 20;       /* vert outer gap between window
 static const int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "ttf-linux-libertine:size=1w" };
+static const char *fonts[]          = {"ttf-linux-libertine:size=1w" };
 static const char dmenufont[]       = "ttf-linux-libertine:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
@@ -19,8 +19,8 @@ static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#500c78";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, "#74289d" },
-	[SchemeSel]  = { col_gray4, col_cyan,  "#eb16ad" },
+	[SchemeNorm] = { col_gray3, col_gray1, "#ff79c6" },
+	[SchemeSel]  = { col_gray4, col_cyan,  "#ff5555" },
 };
 
 /* tagging */
@@ -79,7 +79,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
-	{ MODKEY|Mod4Mask,              XK_h,      incrgaps,       {.i = +1 } },
+	{ MODKEY|ShiftMask,              XK_h,      incrgaps,       {.i = +1 } },
 	{ MODKEY|Mod4Mask,              XK_l,      incrgaps,       {.i = -1 } },
 	{ MODKEY|Mod4Mask|ShiftMask,    XK_h,      incrogaps,      {.i = +1 } },
 	{ MODKEY|Mod4Mask|ShiftMask,    XK_l,      incrogaps,      {.i = -1 } },
