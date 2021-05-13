@@ -14,13 +14,13 @@ static const char *fonts[]          = {"ttf-linux-libertine:size=1w" };
 static const char dmenufont[]       = "ttf-linux-libertine:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#500c78";
+static const char col_gray3[]       = "#fabbdd";
+static const char col_gray4[]       = "#b2d5ff";
+static const char col_cyan[]        = "#980062";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, "#ff79c6" },
-	[SchemeSel]  = { col_gray4, col_cyan,  "#ff5555" },
+	[SchemeNorm] = { col_gray3, col_gray1, "#3c0078" },
+	[SchemeSel]  = { col_gray4, col_cyan,  "#f81198" },
 };
 
 /* tagging */
